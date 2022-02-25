@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b739f953b8311140835d5ac6f8f5673, type: 3}
+  m_Name: Level 0
+  m_EditorClassIdentifier: 
+  LevelName: Level 0
+  MaxRopeLength: 500
+  Level: {fileID: 4052558130353337677, guid: f0e9f8f84afe3ef41a6daf00181a985b, type: 3}
+  NextLevel: {fileID: 11400000, guid: 104a1871ed576d74f9eee25e69a472b0, type: 2}
+  RopePrefab: {fileID: 5172435140902412955, guid: 608c5a5d54d495b498bc8fd7e3e29dae, type: 3}
