@@ -16,6 +16,9 @@ public class ForwardMovable : Movable
     [SerializeField]
     private Rigidbody _rigidbody;
 
+    [SerializeField]
+    private MovableSound _sound;
+
     private bool _isMoving;
 
     private void Update()
@@ -33,6 +36,10 @@ public class ForwardMovable : Movable
 
     public override void StopMove()
     {
+        if (_sound != null)
+        {
+            _sound.Pause();
+        }
         _isMoving = false;
     }
 
@@ -41,6 +48,12 @@ public class ForwardMovable : Movable
     {
         if (_isMoving == true)
             return;
+
+        if (_sound != null)
+        {
+            _sound.Play();
+        }
+
         StopMove();
         _rigidbody.velocity += _force * _direction;
         _isMoving = true;
